@@ -9,7 +9,7 @@ const lodash = require('lodash');
 module.exports = {
     flowFile: path.join(__dirname, 'flows', 'default.json'),
     flowFilePretty: true,
-    credentialSecret: process.env.NODERED_CREDENTIAL_SECRET || 'steedos',
+    credentialSecret: process.env.NODE_RED_CREDENTIAL_SECRET || 'steedos',
     userDir: path.join(__dirname, '.node-red'),
     functionGlobalContext: {
         lodash

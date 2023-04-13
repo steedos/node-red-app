@@ -1,17 +1,24 @@
-Node-RED 模版项目
+Steedos Node-RED Starter Application
 ===
 
 
-[Node-Red](https://nodered.org/) 是 IBM 开源的服务端低代码开发工具，提供了可视化的开发环境，开发华炎魔方微服务。
+## Customising Node-RED
 
-- 创建定时任务
-- 自定义微服务
-- 自定义API
-- 自定义触发器
-- 接收和推送消息
+This repository is here to be cloned, modified and re-used to allow anyone create their own Node-RED based application that can be quickly deployed with Steedos Platofrm.
+
+The web content you get when you go to the application's URL is stored under the public directory.
 
 ```bash
-cd nodered-app
 yarn
 yarn start
 ```
+
+## Environment Variables
+
+The following environment variables can be used to configure the application:
+
+- NODE_RED_CREDENTIAL_SECRET - the secret
+- NODE_RED_STORAGE_NAME - the Cloudant service name as exposed in VCAP_SERVICES
+- NODE_RED_STORAGE_DB_NAME - the name of the database to use on Cloudant
+- NODE_RED_STORAGE_APP_NAME - the prefix used in document names, allowing multiple instances to share the same database.
+- NODE_RED_USERNAME, NODE_RED_PASSWORD - if set, used to secure the editor
