@@ -35,7 +35,7 @@
         "id": "ce147b46c731d342",
         "type": "steedos-config",
         "name": "steedos",
-        "transporter": "${TRANSPORTER}",
+        "transporter": "${STEEDOS_TRANSPORTER}",
         "namespace": "steedos",
         "options": "{}",
         "optionsType": "json"

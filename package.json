@@ -4,7 +4,7 @@
   "private": "true",
   "license": "MIT",
   "scripts": {
-    "start": "node-red --settings settings.js"
+    "start": "node-red --settings steedos-settings.js"
   },
   "dependencies": {
     "@steedos/node-red-contrib-steedos": "^2.4.0",
