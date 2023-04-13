@@ -1,5 +1,7 @@
 .env.local
 
+node_modules
+
 .node-red
 *.backup
 
